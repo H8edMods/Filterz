@@ -1,0 +1,14 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name=theme-color content="#000"><link rel=manifest href=manifest.json><link rel=icon href=icon.svg><title>Filterz</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#000;height:100dvh;overflow:hidden;font:12px system-ui;color:#fff;-webkit-tap-highlight-color:transparent}
+#o{position:fixed;inset:0;width:100%;height:100%;object-fit:cover}#v{position:fixed;width:2px;height:2px;opacity:0;pointer-events:none}
+#ui{position:fixed;left:0;right:0;bottom:0;padding-bottom:env(safe-area-inset-bottom);background:linear-gradient(transparent,#000a 40%)}
+.row{display:flex;gap:8px;overflow-x:auto;padding:6px 10px;scrollbar-width:none}.row::-webkit-scrollbar{display:none}
+.t{flex:none;padding:5px 14px;border-radius:20px;background:#fff2;border:0;color:#fff}.t.on{background:#fff;color:#000}
+.f{flex:none;width:66px;background:none;border:0;color:#fff;text-align:center}.f i{display:block;font-style:normal;font-size:30px;width:58px;height:58px;line-height:58px;margin:auto;border-radius:50%;background:#fff3;border:3px solid transparent}
+.f.on i{border-color:#fff}.f s{text-decoration:none;font-size:10px;display:block;margin-top:2px;white-space:nowrap}
+#s{display:block;margin:4px auto 12px;width:76px;height:76px;border-radius:50%;border:5px solid #fff;background:#fff4;touch-action:none}#s.r{background:#f22;border-color:#f66}
+#fl{position:fixed;top:calc(12px + env(safe-area-inset-top));right:12px;width:46px;height:46px;border-radius:50%;border:0;background:#0006;color:#fff;font-size:22px}
+#m{position:fixed;top:calc(18px + env(safe-area-inset-top));left:12px;background:#0007;padding:6px 10px;border-radius:12px}</style></head>
+<body><video id=v playsinline muted></video><canvas id=o></canvas><div id=m>Loading face tracking…</div><button id=fl>🔄</button>
+<div id=ui><div class=row id=tb></div><div class=row id=st></div><button id=s aria-label="Tap: photo. Hold: video"></button></div>
+<script type=module src=app.js></script></body></html>
